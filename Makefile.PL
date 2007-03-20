@@ -1,17 +1,12 @@
-use strict;
-use warnings;
-use ExtUtils::MakeMaker;
+#!/usr/bin/env perl
+use inc::Module::Install;
 
-WriteMakefile(
-    NAME                => 'Template::Provider::Markdown',
-    AUTHOR              => 'Kang-min Liu <gugod@gugod.org>',
-    VERSION_FROM        => 'lib/Template/Provider/Markdown.pm',
-    ABSTRACT_FROM       => 'lib/Template/Provider/Markdown.pm',
-    PL_FILES            => {},
-    PREREQ_PM => {
-        'Text::Markdown' => 0,
-        'Test::More' => 0,
-    },
-    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'Template-Provider-Markdown-*' },
-);
+name     'Template-Provider-Markdown';
+all_from 'lib/Template/Provider/Markdown.pm';
+requires 'Text::Markdown' => 0;
+requires 'Test::More' => 0;
+build_requires  ('Test::More');
+
+&auto_install;
+&WriteAll;
+

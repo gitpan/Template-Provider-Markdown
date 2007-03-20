@@ -1,5 +1,5 @@
 package Template::Provider::Markdown;
-
+use v5.8.0;
 use warnings;
 use strict;
 use Text::Markdown 'markdown';
@@ -16,7 +16,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
