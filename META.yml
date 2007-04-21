@@ -1,12 +1,17 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Template-Provider-Markdown
-version:      0.01
-version_from: lib/Template/Provider/Markdown.pm
-installdirs:  site
-requires:
-    Test::More:                    0
-    Text::Markdown:                0
-
+abstract: Markdown as template body, no HTML.
+author: Kang-min Liu, C<< <gugod at gugod.org> >>
+build_requires: 
+  Test::More: 0
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+generated_by: Module::Install version 0.640
+license: perl
+name: Template-Provider-Markdown
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Test::More: 0
+  Text::Markdown: 0
+  perl: 5.8.0
+version: 0.03

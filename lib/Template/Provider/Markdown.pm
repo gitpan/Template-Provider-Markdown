@@ -16,7 +16,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -28,7 +28,7 @@ with HTML anymore.
     my $tt = Template->new(
         LOAD_TEMPLATES => [ Template::Provider::Markdown->new ]
     );
-    my $templae = 'My name is [% author %]';
+    my $template = 'My name is [% author %]';
     print $tt->process(\$template, { author => "Charlie" });
 
     <p>My name is Charlie</p>
