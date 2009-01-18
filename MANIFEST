@@ -1,8 +1,9 @@
-.cvsignore
+.shipit
 Changes
 examples/synopsis.pl
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/AutoInstall.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
@@ -20,5 +21,5 @@ README
 t/00-load.t
 t/01-basic.t
 t/boilerplate.t
-t/pod-coverage.t
-t/pod.t
+xt/pod-coverage.t
+xt/pod.t
