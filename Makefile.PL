@@ -6,6 +6,7 @@ all_from 'lib/Template/Provider/Markdown.pm';
 
 requires
     'Text::Markdown' => 0,
+    'Text::Diff' => 0,
     'Template' => 2.20;
 
 build_requires  ('Test::More');
